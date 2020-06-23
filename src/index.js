@@ -14,7 +14,8 @@ app.use(express.json());
 
 //routes
 app.use(require('./routes/index'));
-app.use('/api/movies',require('./routes/movies'));
+app.use('/api/movies', require('./routes/movies'));
+app.use('/api/users', require('./routes/users'));
 
 //starting the server
 app.listen(app.get('port'), () => {
